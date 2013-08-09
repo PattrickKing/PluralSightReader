@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C6F661917B52C450089E706 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F661817B52C450089E706 /* UIKit.framework */; };
+		2C6F661B17B52C450089E706 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F661A17B52C450089E706 /* Foundation.framework */; };
+		2C6F661D17B52C450089E706 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F661C17B52C450089E706 /* CoreGraphics.framework */; };
+		2C6F661F17B52C450089E706 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F661E17B52C450089E706 /* CoreData.framework */; };
+		2C6F662517B52C450089E706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F662317B52C450089E706 /* InfoPlist.strings */; };
+		2C6F662717B52C450089E706 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F662617B52C450089E706 /* main.m */; };
+		2C6F662B17B52C450089E706 /* PWKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F662A17B52C450089E706 /* PWKAppDelegate.m */; };
+		2C6F662D17B52C450089E706 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F662C17B52C450089E706 /* Default.png */; };
+		2C6F662F17B52C450089E706 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F662E17B52C450089E706 /* Default@2x.png */; };
+		2C6F663117B52C450089E706 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F663017B52C450089E706 /* Default-568h@2x.png */; };
+		2C6F663417B52C450089E706 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F663217B52C450089E706 /* MainStoryboard_iPhone.storyboard */; };
+		2C6F663717B52C450089E706 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F663517B52C450089E706 /* MainStoryboard_iPad.storyboard */; };
+		2C6F663A17B52C450089E706 /* PluralSightServiceReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F663817B52C450089E706 /* PluralSightServiceReader.xcdatamodeld */; };
+		2C6F663D17B52C450089E706 /* PWKMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F663C17B52C450089E706 /* PWKMasterViewController.m */; };
+		2C6F664017B52C450089E706 /* PWKDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F663F17B52C450089E706 /* PWKDetailViewController.m */; };
+		2C6F664817B52C450089E706 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F664717B52C450089E706 /* SenTestingKit.framework */; };
+		2C6F664917B52C450089E706 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F661817B52C450089E706 /* UIKit.framework */; };
+		2C6F664A17B52C450089E706 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F661A17B52C450089E706 /* Foundation.framework */; };
+		2C6F664B17B52C450089E706 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F661E17B52C450089E706 /* CoreData.framework */; };
+		2C6F665317B52C450089E706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F665117B52C450089E706 /* InfoPlist.strings */; };
+		2C6F665617B52C450089E706 /* PluralSightServiceReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F665517B52C450089E706 /* PluralSightServiceReaderTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C6F664C17B52C450089E706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C6F660D17B52C450089E706 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6F661417B52C450089E706;
+			remoteInfo = PluralSightServiceReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C6F661517B52C450089E706 /* PluralSightServiceReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PluralSightServiceReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6F661817B52C450089E706 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2C6F661A17B52C450089E706 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2C6F661C17B52C450089E706 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2C6F661E17B52C450089E706 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		2C6F662217B52C450089E706 /* PluralSightServiceReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PluralSightServiceReader-Info.plist"; sourceTree = "<group>"; };
+		2C6F662417B52C450089E706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C6F662617B52C450089E706 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2C6F662817B52C450089E706 /* PluralSightServiceReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PluralSightServiceReader-Prefix.pch"; sourceTree = "<group>"; };
+		2C6F662917B52C450089E706 /* PWKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWKAppDelegate.h; sourceTree = "<group>"; };
+		2C6F662A17B52C450089E706 /* PWKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWKAppDelegate.m; sourceTree = "<group>"; };
+		2C6F662C17B52C450089E706 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2C6F662E17B52C450089E706 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2C6F663017B52C450089E706 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2C6F663317B52C450089E706 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		2C6F663617B52C450089E706 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		2C6F663917B52C450089E706 /* PluralSightServiceReader.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PluralSightServiceReader.xcdatamodel; sourceTree = "<group>"; };
+		2C6F663B17B52C450089E706 /* PWKMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWKMasterViewController.h; sourceTree = "<group>"; };
+		2C6F663C17B52C450089E706 /* PWKMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWKMasterViewController.m; sourceTree = "<group>"; };
+		2C6F663E17B52C450089E706 /* PWKDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWKDetailViewController.h; sourceTree = "<group>"; };
+		2C6F663F17B52C450089E706 /* PWKDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWKDetailViewController.m; sourceTree = "<group>"; };
+		2C6F664617B52C450089E706 /* PluralSightServiceReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PluralSightServiceReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C6F664717B52C450089E706 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		2C6F665017B52C450089E706 /* PluralSightServiceReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PluralSightServiceReaderTests-Info.plist"; sourceTree = "<group>"; };
+		2C6F665217B52C450089E706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2C6F665417B52C450089E706 /* PluralSightServiceReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluralSightServiceReaderTests.h; sourceTree = "<group>"; };
+		2C6F665517B52C450089E706 /* PluralSightServiceReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluralSightServiceReaderTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C6F661217B52C450089E706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6F661917B52C450089E706 /* UIKit.framework in Frameworks */,
+				2C6F661B17B52C450089E706 /* Foundation.framework in Frameworks */,
+				2C6F661D17B52C450089E706 /* CoreGraphics.framework in Frameworks */,
+				2C6F661F17B52C450089E706 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6F664217B52C450089E706 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6F664817B52C450089E706 /* SenTestingKit.framework in Frameworks */,
+				2C6F664917B52C450089E706 /* UIKit.framework in Frameworks */,
+				2C6F664A17B52C450089E706 /* Foundation.framework in Frameworks */,
+				2C6F664B17B52C450089E706 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C6F660C17B52C450089E706 = {
+			isa = PBXGroup;
+			children = (
+				2C6F662017B52C450089E706 /* PluralSightServiceReader */,
+				2C6F664E17B52C450089E706 /* PluralSightServiceReaderTests */,
+				2C6F661717B52C450089E706 /* Frameworks */,
+				2C6F661617B52C450089E706 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C6F661617B52C450089E706 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F661517B52C450089E706 /* PluralSightServiceReader.app */,
+				2C6F664617B52C450089E706 /* PluralSightServiceReaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C6F661717B52C450089E706 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F661817B52C450089E706 /* UIKit.framework */,
+				2C6F661A17B52C450089E706 /* Foundation.framework */,
+				2C6F661C17B52C450089E706 /* CoreGraphics.framework */,
+				2C6F661E17B52C450089E706 /* CoreData.framework */,
+				2C6F664717B52C450089E706 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2C6F662017B52C450089E706 /* PluralSightServiceReader */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F662917B52C450089E706 /* PWKAppDelegate.h */,
+				2C6F662A17B52C450089E706 /* PWKAppDelegate.m */,
+				2C6F663217B52C450089E706 /* MainStoryboard_iPhone.storyboard */,
+				2C6F663517B52C450089E706 /* MainStoryboard_iPad.storyboard */,
+				2C6F663B17B52C450089E706 /* PWKMasterViewController.h */,
+				2C6F663C17B52C450089E706 /* PWKMasterViewController.m */,
+				2C6F663E17B52C450089E706 /* PWKDetailViewController.h */,
+				2C6F663F17B52C450089E706 /* PWKDetailViewController.m */,
+				2C6F663817B52C450089E706 /* PluralSightServiceReader.xcdatamodeld */,
+				2C6F662117B52C450089E706 /* Supporting Files */,
+			);
+			path = PluralSightServiceReader;
+			sourceTree = "<group>";
+		};
+		2C6F662117B52C450089E706 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F662217B52C450089E706 /* PluralSightServiceReader-Info.plist */,
+				2C6F662317B52C450089E706 /* InfoPlist.strings */,
+				2C6F662617B52C450089E706 /* main.m */,
+				2C6F662817B52C450089E706 /* PluralSightServiceReader-Prefix.pch */,
+				2C6F662C17B52C450089E706 /* Default.png */,
+				2C6F662E17B52C450089E706 /* Default@2x.png */,
+				2C6F663017B52C450089E706 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C6F664E17B52C450089E706 /* PluralSightServiceReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F665417B52C450089E706 /* PluralSightServiceReaderTests.h */,
+				2C6F665517B52C450089E706 /* PluralSightServiceReaderTests.m */,
+				2C6F664F17B52C450089E706 /* Supporting Files */,
+			);
+			path = PluralSightServiceReaderTests;
+			sourceTree = "<group>";
+		};
+		2C6F664F17B52C450089E706 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F665017B52C450089E706 /* PluralSightServiceReaderTests-Info.plist */,
+				2C6F665117B52C450089E706 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C6F661417B52C450089E706 /* PluralSightServiceReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6F665917B52C450089E706 /* Build configuration list for PBXNativeTarget "PluralSightServiceReader" */;
+			buildPhases = (
+				2C6F661117B52C450089E706 /* Sources */,
+				2C6F661217B52C450089E706 /* Frameworks */,
+				2C6F661317B52C450089E706 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PluralSightServiceReader;
+			productName = PluralSightServiceReader;
+			productReference = 2C6F661517B52C450089E706 /* PluralSightServiceReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C6F664517B52C450089E706 /* PluralSightServiceReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C6F665C17B52C450089E706 /* Build configuration list for PBXNativeTarget "PluralSightServiceReaderTests" */;
+			buildPhases = (
+				2C6F664117B52C450089E706 /* Sources */,
+				2C6F664217B52C450089E706 /* Frameworks */,
+				2C6F664317B52C450089E706 /* Resources */,
+				2C6F664417B52C450089E706 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C6F664D17B52C450089E706 /* PBXTargetDependency */,
+			);
+			name = PluralSightServiceReaderTests;
+			productName = PluralSightServiceReaderTests;
+			productReference = 2C6F664617B52C450089E706 /* PluralSightServiceReaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C6F660D17B52C450089E706 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PWK;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Patrick King";
+			};
+			buildConfigurationList = 2C6F661017B52C450089E706 /* Build configuration list for PBXProject "PluralSightServiceReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2C6F660C17B52C450089E706;
+			productRefGroup = 2C6F661617B52C450089E706 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C6F661417B52C450089E706 /* PluralSightServiceReader */,
+				2C6F664517B52C450089E706 /* PluralSightServiceReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C6F661317B52C450089E706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6F662517B52C450089E706 /* InfoPlist.strings in Resources */,
+				2C6F662D17B52C450089E706 /* Default.png in Resources */,
+				2C6F662F17B52C450089E706 /* Default@2x.png in Resources */,
+				2C6F663117B52C450089E706 /* Default-568h@2x.png in Resources */,
+				2C6F663417B52C450089E706 /* MainStoryboard_iPhone.storyboard in Resources */,
+				2C6F663717B52C450089E706 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6F664317B52C450089E706 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6F665317B52C450089E706 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C6F664417B52C450089E706 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C6F661117B52C450089E706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6F662717B52C450089E706 /* main.m in Sources */,
+				2C6F662B17B52C450089E706 /* PWKAppDelegate.m in Sources */,
+				2C6F663A17B52C450089E706 /* PluralSightServiceReader.xcdatamodeld in Sources */,
+				2C6F663D17B52C450089E706 /* PWKMasterViewController.m in Sources */,
+				2C6F664017B52C450089E706 /* PWKDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C6F664117B52C450089E706 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6F665617B52C450089E706 /* PluralSightServiceReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C6F664D17B52C450089E706 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C6F661417B52C450089E706 /* PluralSightServiceReader */;
+			targetProxy = 2C6F664C17B52C450089E706 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C6F662317B52C450089E706 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6F662417B52C450089E706 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2C6F663217B52C450089E706 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6F663317B52C450089E706 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		2C6F663517B52C450089E706 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6F663617B52C450089E706 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		2C6F665117B52C450089E706 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C6F665217B52C450089E706 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C6F665717B52C450089E706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C6F665817B52C450089E706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C6F665A17B52C450089E706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluralSightServiceReader/PluralSightServiceReader-Prefix.pch";
+				INFOPLIST_FILE = "PluralSightServiceReader/PluralSightServiceReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2C6F665B17B52C450089E706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluralSightServiceReader/PluralSightServiceReader-Prefix.pch";
+				INFOPLIST_FILE = "PluralSightServiceReader/PluralSightServiceReader-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2C6F665D17B52C450089E706 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PluralSightServiceReader.app/PluralSightServiceReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluralSightServiceReader/PluralSightServiceReader-Prefix.pch";
+				INFOPLIST_FILE = "PluralSightServiceReaderTests/PluralSightServiceReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		2C6F665E17B52C450089E706 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PluralSightServiceReader.app/PluralSightServiceReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PluralSightServiceReader/PluralSightServiceReader-Prefix.pch";
+				INFOPLIST_FILE = "PluralSightServiceReaderTests/PluralSightServiceReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C6F661017B52C450089E706 /* Build configuration list for PBXProject "PluralSightServiceReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6F665717B52C450089E706 /* Debug */,
+				2C6F665817B52C450089E706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C6F665917B52C450089E706 /* Build configuration list for PBXNativeTarget "PluralSightServiceReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6F665A17B52C450089E706 /* Debug */,
+				2C6F665B17B52C450089E706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2C6F665C17B52C450089E706 /* Build configuration list for PBXNativeTarget "PluralSightServiceReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C6F665D17B52C450089E706 /* Debug */,
+				2C6F665E17B52C450089E706 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2C6F663817B52C450089E706 /* PluralSightServiceReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2C6F663917B52C450089E706 /* PluralSightServiceReader.xcdatamodel */,
+			);
+			currentVersion = 2C6F663917B52C450089E706 /* PluralSightServiceReader.xcdatamodel */;
+			path = PluralSightServiceReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2C6F660D17B52C450089E706 /* Project object */;
+}
