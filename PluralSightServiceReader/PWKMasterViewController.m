@@ -7,14 +7,17 @@
 //
 
 #import "PWKMasterViewController.h"
-
 #import "PWKDetailViewController.h"
+#import "PWKCourse.h"
 
-@interface PWKMasterViewController ()
+@interface PWKMasterViewController () {
+    NSMutableArray *_objects;
+}
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation PWKMasterViewController
+
 
 - (void)awakeFromNib
 {
@@ -28,38 +31,45 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    NSURL *url = [NSURL URLWithString:@"http://www.pluralsight.com/odata/Courses"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    [NSURLConnection sendAsynchronousRequest:request queue:[[NSOperationQueue alloc] init] completionHandler:^(NSURLResponse *response, NSData *data, NSError *errror) {
+        
+        // parse the json data here
+        NSError* jsonError;
+        NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonError];
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (PWKDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+        if (json) {
+            
+            NSArray* allCourses = [json objectForKey: @"id"];
+            _objects = [[NSMutableArray alloc] init];
+            
+            for (NSDictionary* jsonCourse in allCourses) {
+                
+                PWKCourse *course = [[PWKCourse alloc] init];
+                [course setTitle:[jsonCourse objectForKey:@"Title"]];
+                [course setCategory:[jsonCourse objectForKey:@"Category"]];
+                [course setShortDesc:[jsonCourse objectForKey:@"ShortDescription"]];
+                
+                 [_objects addObject:course];
+            }
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[self tableView] reloadData];
+            });
+        } else {
+            NSLog(@"An error occurred %@", jsonError);
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)insertNewObject:(id)sender
-{
-    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-    NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-    
-    // If appropriate, configure the new managed object.
-    // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
-    
-    // Save the context.
-    NSError *error = nil;
-    if (![context save:&error]) {
-         // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
 }
 
 #pragma mark - Table View

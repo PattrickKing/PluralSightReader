@@ -28,6 +28,7 @@
 		2C6F664B17B52C450089E706 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6F661E17B52C450089E706 /* CoreData.framework */; };
 		2C6F665317B52C450089E706 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C6F665117B52C450089E706 /* InfoPlist.strings */; };
 		2C6F665617B52C450089E706 /* PluralSightServiceReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F665517B52C450089E706 /* PluralSightServiceReaderTests.m */; };
+		2C6F666217B52C7E0089E706 /* PWKCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F666117B52C7E0089E706 /* PWKCourse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		2C6F665217B52C450089E706 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C6F665417B52C450089E706 /* PluralSightServiceReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PluralSightServiceReaderTests.h; sourceTree = "<group>"; };
 		2C6F665517B52C450089E706 /* PluralSightServiceReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PluralSightServiceReaderTests.m; sourceTree = "<group>"; };
+		2C6F666017B52C7E0089E706 /* PWKCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWKCourse.h; path = PluralSightServiceReader/PWKCourse.h; sourceTree = "<group>"; };
+		2C6F666117B52C7E0089E706 /* PWKCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWKCourse.m; path = PluralSightServiceReader/PWKCourse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,7 @@
 		2C6F662017B52C450089E706 /* PluralSightServiceReader */ = {
 			isa = PBXGroup;
 			children = (
+				2C6F665F17B52C530089E706 /* Models */,
 				2C6F662917B52C450089E706 /* PWKAppDelegate.h */,
 				2C6F662A17B52C450089E706 /* PWKAppDelegate.m */,
 				2C6F663217B52C450089E706 /* MainStoryboard_iPhone.storyboard */,
@@ -175,6 +179,16 @@
 				2C6F665117B52C450089E706 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2C6F665F17B52C530089E706 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C6F666017B52C7E0089E706 /* PWKCourse.h */,
+				2C6F666117B52C7E0089E706 /* PWKCourse.m */,
+			);
+			name = Models;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +308,7 @@
 				2C6F663A17B52C450089E706 /* PluralSightServiceReader.xcdatamodeld in Sources */,
 				2C6F663D17B52C450089E706 /* PWKMasterViewController.m in Sources */,
 				2C6F664017B52C450089E706 /* PWKDetailViewController.m in Sources */,
+				2C6F666217B52C7E0089E706 /* PWKCourse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
