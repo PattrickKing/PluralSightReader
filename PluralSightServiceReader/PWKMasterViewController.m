@@ -44,7 +44,7 @@
 
         if (json) {
             
-            NSArray* allCourses = [json objectForKey: @"id"];
+            NSArray* allCourses = [json objectForKey: @"d"];
             _objects = [[NSMutableArray alloc] init];
             
             for (NSDictionary* jsonCourse in allCourses) {
@@ -88,7 +88,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    [self configureCell:cell atIndexPath:indexPath];
+    
+    PWKCourse *object = _objects[indexPath.row];
+    cell.textLabel.text = [object title];
     return cell;
 }
 
